@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Espectros de señales de radio</h1>
+    </header>
+    <section>
+        <div class="contNumSenales">
+            <label for="numSenales">Ingrese la cantidad de señales</label>
+            <input type="number" name="numSenales" id="numSenales" value="3" oninput="crearSenal()">
+        </div>
+
+        <div id="contSenales"></div> <!-- Aqui se ingresa el formulario de las señales-->
+
+        <div class="contRuido">
+            <div>
+                <label for="temperatura">🌡️ Temperatura (°K)</label>
+                <input type="number" name="temperatura" id="temperatura" value="300">
+            </div>
+            <div>
+                <label for="anchoDeBanda">↔️ Ancho de banda del dispositivo (Bw)</label>
+                <input type="number" name="anchoDeBanda" id="anchoDeBanda">
+            </div>
+        </div>
+
+        <div class="contBoton">
+            <button class="botonCrear" onclick="crearGrafica()">Crear grafica</button>
+        </div>
+    </section>
+    <section>
+        <h3>Gráfica</h3>
+        <div id="datosIngresados" class="datosIngresados">
+        </div>
+        <div id="grafica"></div>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
