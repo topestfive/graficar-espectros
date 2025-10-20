@@ -91,7 +91,7 @@ const crearGrafica = () => {
         <tr> 
           <td>Señal ${i + 1}</td>
           <td>Potencia: ${s.potencia} dBm</td>
-          <td>Freciancia: ${s.frecuencia} MHz</td>
+          <td>Frecuencia: ${s.frecuencia} MHz</td>
           <td>SNR: ${s.potencia - ruido} dB</td>
         </tr>`; 
   }); 
